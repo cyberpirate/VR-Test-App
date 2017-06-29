@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.joei.vr.MainActivity">
+
+    <tech.joei.vr_mod_1.GLView
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:layout_alignLeft="@+id/glView"
+        android:layout_alignRight="@+id/glView"
+        android:layout_alignTop="@+id/glView"
+        android:layout_alignBottom="@+id/glView">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
